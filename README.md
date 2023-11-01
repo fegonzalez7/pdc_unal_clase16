@@ -7,7 +7,7 @@
 		<th><b>Definición</b></th>
 	</tr>
 	<tr bgcolor="#e4e4ed">
-		<td style="color:#141414">Un caracter es el elemento mínimo de información usado para representar, controlar, transmitir y visualizar datos. Al conjunto de caracteres usados con este fin se le llama: <b>esquema de codicación</b>. Los esquemas de codificación en general usan un número de bits o bytes fijos.
+		<td style="color:#141414">Un carácter es el elemento mínimo de información usado para representar, controlar, transmitir y visualizar datos. Al conjunto de carácteres usados con este fin se le llama: <b>esquema de codificación</b>. Los esquemas de codificación en general usan un número de bits o bytes fijos.
 	</tr>
 </table>
 
@@ -15,9 +15,9 @@
 Código Estadounidense Estándar para el Intercambio de Información
 *(American Standard Code for Information Interchange)*.
 
-+ En su versión original usa 7 bits, definiendo 128 caracteres.
++ En su versión original usa 7 bits, definiendo 128 carácteres.
 + En la versión extendida usa 8 bits (esto es 1 byte), definiendo 256
-caracteres.
+carácteres.
 + Es la base de los archivos de texto plano (o sin formato).
 + Es el esquema base para la escritura de programas en casi todos los
 lenguajes de programación (incluido Python).
@@ -28,7 +28,7 @@ lenguajes de programación (incluido Python).
 </div>
 
 ### Unicode
-Esquema de codificación cuyo objetivo es dar a cada caracter usado por cada uno de los lenguajes humanos su propio código, es decir, permitir la "internacionalización" de la computación.
+Esquema de codificación cuyo objetivo es dar a cada carácter usado por cada uno de los lenguajes humanos su propio código, es decir, permitir la "internacionalización" de la computación.
 
 + **UTF-8:** Definido por ocho (8) bits (un byte). Toma como base el
 ASCII, ANSI de Windows y el ISO 􀀀 8859 􀀀 1. Muy usado
@@ -45,21 +45,21 @@ UTF 􀀀 8).
 
 ### Chars
 Dado que Python usa ASCII para la escritura de sus programas, se cuenta
-con un esquema de representación para indicar que se usaran los mismos. El caracter a usar se delimita por el caracter ' o por el caracter " (llamado escape) de caracteres tanto de control o Unicode.
- + 'A': Se refiere al caracter A
- + "3": Se refiere al caracter 3
- + '"': Se refiere al caracter "
- + "'": Se refiere al caracter '
+con un esquema de representación para indicar que se usaran los mismos. El carácter a usar se delimita por el carácter ' o por el carácter " (llamado escape) de carácteres tanto de control o Unicode.
+ + 'A': Se refiere al carácter A
+ + "3": Se refiere al carácter 3
+ + '"': Se refiere al carácter "
+ + "'": Se refiere al carácter '
 
-### Cadenas de caracteres
-Una cadena de caracteres str es una secuencia de cero o mas caracteres.
-Una cadena de caracteres se delimita por el caracter ' o por el caracter ".
-Una cadena de caracteres es una estructura de datos **inmutable**, esto
+### Cadenas de carácteres
+Una cadena de carácteres str es una secuencia de cero o mas carácteres.
+Una cadena de carácteres se delimita por el carácter ' o por el carácter ".
+Una cadena de carácteres es una estructura de datos **inmutable**, esto
 significa que no puede ser cambiada.
 
 + 'ejemplo de cadena'
 + "Cadena con un tabulado \t y una nueva \n línea"
-+ 'Cadena con un caracter unicode \u01F4 y una comilla doble"'
++ 'Cadena con un carácter unicode \u01F4 y una comilla doble"'
 + "Cadena con una comilla simple \', una comilla doble \" y una diagonal invertida \\"
 + La cadena vacía "" o ''
 
@@ -78,7 +78,7 @@ print(cadena)
 
 ## Operadores
 ### Concatenar
-Concatena (pega) dos cadenas. Se utiliza el simbolo *+*.
+Concatena (pega) dos cadenas. Se utiliza el símbolo *+*.
 
 **Ejemplo 3:** 
 ```python
@@ -89,8 +89,8 @@ print(nombre + trabajo)
 print(trabajo + " " + nombre)
 ```
 
-### Conmparar
-Se usan los operadores convencionales (<, <=, >, >=, ==, !=) para comparar cadenas usando el orden lexicografico. En el orden lexicografico, se comparan de izquierda a derecha uno a uno los caracteres, mientras sean iguales. En el caso que no sean iguales, si el caracter de la primera cadena es menor que el de la segunda a la primer cadena se le considera menor, pero si es mayor, a la primer cadena se le considera mayor. Si todos los caracteres son iguales, las cadenas son iguales.
+### Comparar
+Se usan los operadores convencionales (<, <=, >, >=, ==, !=) para comparar cadenas usando el orden lexicográfico. En el orden lexicográfico, se comparan de izquierda a derecha uno a uno los carácteres, mientras sean iguales. En el caso que no sean iguales, si el carácter de la primera cadena es menor que el de la segunda a la primer cadena se le considera menor, pero si es mayor, a la primer cadena se le considera mayor. Si todos los carácteres son iguales, las cadenas son iguales.
 
 **Ejemplo 4:** 
 ```python
@@ -110,7 +110,7 @@ print(nombre[4]) # imprime h
 ```
 
 ### Pertenencia
-Es posible determinar si una subcadena se encuentra en una cadena de caracteres. Se utiliza el operador *in*.
+Es posible determinar si una subcadena se encuentra en una cadena de carácteres. Se utiliza el operador *in*.
 
 **Ejemplo 5:** 
 ```python
@@ -197,8 +197,8 @@ print(s.title()) # Primer letra cada palabra a mayuscula
 print(s.swapcase()) # Mayusculas <-> minusculas
 ```
 
-### Removiendo caracteres
-El metodo strip/lstrip/rstrip remueve los caracteres deseados a los dos lados/izquierda/derecha de una cadena. La notación es strip/lstrip/rstrip(caracteres). Si no se dan caracteres como argumento, elimina espacios en blanco (espacios y tabulaciones).
+### Removiendo carácteres
+El metodo strip/lstrip/rstrip remueve los carácteres deseados a los dos lados/izquierda/derecha de una cadena. La notación es strip/lstrip/rstrip(carácteres). Si no se dan carácteres como argumento, elimina espacios en blanco (espacios y tabulaciones).
 
 **Ejemplo 11:** 
 ```python
@@ -252,7 +252,7 @@ print(rep)
 ```
 
 ### .join
- En general, permite convertir el contenido de una lista/tupla/string en un string separada por un caracter en particular.
+ En general, permite convertir el contenido de una lista/tupla/string en un string separada por un carácter en particular.
 
 **Ejemplo 13:** 
 ```python
@@ -277,10 +277,10 @@ Imprime objects al flujo de texto file, separándolos por sep y seguidos por end
 Todos los argumentos que no son por palabra clave se convierten a cadenas tal y como str() hace y se escriben al flujo, separados por sep y seguidos por end. Tanto sep como end deben ser cadenas; también pueden ser None, lo cual significa que se empleen los valores por defecto. Si no se indica objects, print() escribirá end.
 
 ## format
-A la hora de imprimir cadenas de caracteres se pueden *'formatear'* para lograr cierto estilo o reeemplazar ciertos valores. Existen diversas formas de hacerlo:
+A la hora de imprimir cadenas de carácteres se pueden *'formatear'* para lograr cierto estilo o reemplazar ciertos valores. Existen diversas formas de hacerlo:
 
 ### Old style
-El estilo clásico utilizael operador *%*. Se asemeja bastante a usar *printf* de C. *%* Define un placeholder en el cual se podrá reemplazar un valor con ciertas caracteristicas (tipo de datos, representación, entre otras).
+El estilo clásico utiliza el operador *%*. Se asemeja bastante a usar *printf* de C. *%* Define un placeholder en el cual se podrá reemplazar un valor con ciertas carácteristicas (tipo de datos, representación, entre otras).
 
 ```python
 name = "Felipe"
@@ -378,7 +378,7 @@ print("Hola, {nombre:s}, hoy es el dia {dia:d}".format(nombre=name, dia=dia))
 ```
 
 ### f-Strings
-Disponibles para Python 3.6+ esta nueva nueva forma permite embeber expresiones de python dentro de cadenas de caracteres.
+Disponibles para Python 3.6+ esta nueva nueva forma permite embeber expresiones de python dentro de cadenas de carácteres.
 
 ```python
 name = "Felipe"
@@ -398,5 +398,3 @@ print(f"Hola, {name}, hoy es el dia {dia}")
  - Cantidad de vocales
  - Cantidad de consonantes
  - Listado de las 50 palabras que más se repiten
- - Listado de destinatarios con cantidad de mensajes recibidos
- - Cantidad de mensajes enviados por cada día
